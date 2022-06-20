@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* 본문메인 */
+
+
+/* slogan */
+#slogan { position: relative; width: 100%; height: 600px; background: url(../image/bgslogan.jpg) no-repeat center center;
+  display: flex; justify-content: center; align-items: center; text-align: center;
+  flex-direction: column; }
+#slogan::before { content:""; position: absolute; top: 0; left: 0;
+                  width: 100%; height: 600px;
+                  background-color: rgba(0, 0, 0, 0.3);}
+#slogan p { position: relative; margin-bottom: 50px; text-align: center; text-transform: uppercase;
+          font-size: 70px; color: #fff; font-weight: bold; text-shadow: 0 3px 2px #000; }
+
+#slogan a { position: relative;  display: block; width: 156px;
+            background-color: #ef464c; color: #fff;
+            line-height: 40px;  }
+#solutionWrap { background: #ebebeb; padding: 55px;}
+#solution { display: flex; justify-content: space-evenly; width: 1200px; margin: 0 auto; }
+#solution .solution { flex:  1; text-align: center;  }
+#solution .solution::before { display: block; text-align: center; content: ""; background: url(../image/bgsolution.png ) no-repeat;
+                               width: 100px; height: 100px; margin: 0 auto; }
+#solution .security::before { background-position-x: center;  }
+#solution .payment::before { background-position-y: right;}
+#solution .solution h3 { text-align: center; }
+#solution .solution a { color: #333; }
+/* custom */
+#customerboard { width: 1200px; margin: 60px auto; display: flex; justify-content: space-evenly;}
+#customerboard > section {  width: 45%; position: relative; }
+#customerboard > section h3 { padding-bottom: 20px; border-bottom: 1px solid #000; }
+#customerboard > section .more{ width: 30px; height: 30px; position: absolute; top: 0; right: 0;
+                                text-indent: -9999px;
+                                transition: 0.5s;}
+#customerboard > section .more::before { content:"";
+                                        position: absolute;
+                                        top: 50%; left: 0;
+                                        width: 30px; border-bottom: 1px solid rgb(209, 209, 209);  }
+#customerboard > section .more::after { content:"";
+                                        position: absolute;
+                                        top: 0; left: 50%; height: 30px;
+                                        border-right: 1px solid rgb(209, 206, 206); }
+
+#customerboard > section .more:hover { transform: rotate(45deg)}
+/* securityNews */
+#securityNews { }
+#securityNews  h3 span{ color: #f67b60; position: relative; padding: 10px; font-size: 22px; }
+#securityNews a { color: #000; }
+#securityNews a dl { padding: 22px 12px 10px; }
+#securityNews a dl dt{ color: #000; margin-bottom: 18px; font-size: 22px; }
+#securityNews a dl dd{ color: #808080; line-height: 20px; }
+/* newsnotice */
+#notice {  }
+#notice ul { padding: 30px 15px 10px; margin-bottom: 20px; }
+#notice ul li { margin-bottom: 30px; border-bottom: 1px solid #413c3c; }
+#notice ul li a { display: block;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis; }
+#notice ul li a span { color: #707070;  }
+
+/* footer */

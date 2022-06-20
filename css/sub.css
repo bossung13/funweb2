@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+ 
+
+ #subHeader { 
+              display: flex; 
+              justify-content: center;
+              align-items: center; 
+              height: 300px; 
+              position: relative; 
+              background: url(../image/office.jpg) no-repeat center center; }
+ #subHeader .subHeaderCompany {  background: url(../image/office.jpg.jpg) no-repeat center center;
+                                height: 300px; }
+ #subHeader h2 { color: #fff;
+                 text-transform: uppercase;
+                 font-size: 60px;
+                 font-weight: normal; 
+                 position: absolute; right: 250px;}
+#sub { width: 100%; display: flex; justify-content: center; 
+       border-bottom: 1px solid #3c3c3c; }
+
+ #sub h3 { margin: 0 100px 30px 0; 
+               font-size: 30px; 
+               background: #000; color: #fff;
+               width: 250px; height: 90px; text-align: center; line-height: 80px; }
+ #sub ul { width: 1200px; display: flex; }
+ #sub ul li { width: 25% }
+ #sub ul li a { display: block; border-left: 1px solid #ccc;
+                    text-align: center;
+                    color: #333;
+                    width: 220px;        
+                    padding-bottom: 7px; 
+                    font-size: 15px; 
+                    text-transform: uppercase; 
+                    line-height: 50px; 
+                    border-bottom: 1px solid rgb(198, 196, 196);
+                    background: url(../image/bgsnb.png);
+                                }
+#sub ul li :last-child a { border-right: 1px solid #ccc; 
+                            }
+#sub ul li.a { border-bottom: 2px solid #1b8db8; }
+ #subWrap ul::before { position: absolute; 
+                           margin-top: 10px;
+                           content:''; 
+                           width: 10px; 
+                           height: 10px; 
+                           border-bottom: 1px solid #000; 
+                           border-left: 1px solid #000; 
+                           transform: rotate(225deg);}
+
+ #subWrap ul li a:hover { background: rgb(220, 255, 254); color: rgb(255, 166, 0); 
+                          width: 220px; height: 30px;}
+
+ 
+  #subContent { width: 1200px; margin: 0 auto 50px;
+               
+               }
+ #subContent h3 { margin: 50px 0; color: #333;
+                 font-size: 50px; font-weight: normal;
+                 font: normal 50px "Times New Roman"; }
+ #subContent figure { float: right; margin: 0 0 15px 15px; }
+ #subContent img {  border: 1px solid #000; justify-items: center; }
+ #subContent figcaption { color: rgb(60, 60, 255); line-height: 30px;  }
+ #subContent p { padding: 5px 20px; }
+
+ 
+ /* 서브컨텐츠 notice */
+ #notice { width: 1200px; }
+ #notice thead { background: linear-gradient(180deg #2676e5, #61a9f1, #2774e0);  }
+ #notice caption { }
+ #notice thead tr { }
+ #notice th {  text-transform: capitalize; color: #fff; font-weight: normal; line-height: 30px; text-align: center;
+             background: linear-gradient(#68b0eb 0, #5fa7ef 25%,
+                                         #3b92ef 49%, #338ae7 50%,
+                                         #338bef 51%, #338bef 52%,
+                                         #3083ed 75%, #2870df 100%); }
+#notice .no { width: 70px; }
+#notice .title { letter-spacing: 1em; }
+#notice .write { width: 130px; }
+#notice .date { width: 100px;  }
+#notice .width { width: 100px; border-radius: 0 7px 7px 0; }
+#notice .td { line-height: 10px; padding: 10px 0; border-bottom: 1px dotted #999; font-size: 18px; text-align: center; }
+#notice .td:nth-child(2) { text-align: center; }
+#notice .td:nth-child(2) div { width: 800px; white-space: nowrap;
+                                overflow: hidden; 
+                                text-overflow: ellipsis;}
+
+/* form */
+#noticeSearch { display: flex; justify-content: flex-end; margin: 20px 0 30px; }
+#searchBox { width: 222px; height: 22px; padding-left: 10px; margin-top: 22px; border: 1px solid #000; border-radius: 11px; background: #fefdeb;}
+#searchBtn {width: 90px ; height: 22px; 
+            border: 1px solid #999;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background:  linear-gradient(180deg #68b0eb 20%, #5fa7ef 25% ); 
+            color: #fff;
+             }
+/* 페이지이동버튼 */
+#page_control {  }
+#page
+  
+ 
+ 
